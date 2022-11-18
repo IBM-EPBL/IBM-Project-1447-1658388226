@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(204, 231, 248);
+}
+
+.cardbox{
+    background-color: #fff;
+    max-width: 400px;
+    height: fit-content;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid rgb(241, 241, 241);
+    border-radius: 15px;
+
+    /*Making card into center*/
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.title p{
+    font-weight: 600;
+    font-size: large;
+    text-align: center;
+}
+
+.msg{
+    color: red;
+    text-align: center;
+    padding-top: 15px;
+}
+
