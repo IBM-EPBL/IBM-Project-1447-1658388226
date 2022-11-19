@@ -1,0 +1,272 @@
+*{
+    box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  body{
+    font-family: 'Source Sans Pro',sans-serif,open-sans;
+    font-weight: 400;
+    background-color: #6dbfb8;
+    
+  }
+  
+  #register{
+    font-weight: 520;
+  }
+  
+  .button{
+    float: left;
+    color: #24a0ed;
+    font-weight: 500;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 25px;
+    font-size: 17px;
+  }
+  
+  .navbar-brand{
+    padding-left: 50px;
+    padding-right: 20px; 
+    font-weight: 700;
+    color: #24a0ed;
+    letter-spacing: 2px;
+  
+  }
+  
+  .navbar-brand:hover{
+    padding-left: 50px;
+    padding-right: 20px; 
+    font-weight: 700;
+    color: #24a0ed;
+    letter-spacing: 2px;
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .nav-right {
+    float: right;
+    margin: 5px 50px;
+  }
+  
+  .button:hover{
+    border-bottom: 2px solid;
+    margin-bottom: 3px;
+  }
+  
+  #register{
+    margin-left: 10px;
+  }
+  
+  /*banner*/
+  
+  .food-search{
+    background-image:url("/static/src/desktop img.png");
+    background-image: linear-gradient(to right,#24a0ed, rgba(250, 250, 243, 0.027));
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .imge{
+    background-image:url("/static/src/mainfrontimg.jfif");
+    background-repeat: no-repeat;
+    background-position: right;
+    
+  }
+    
+  .content{
+    font-size:xx-large;
+    text-align:left;
+    text-transform:capitalize;
+    line-height: 1;
+    color: #fff;
+  }
+  
+  .title{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    
+    align-items:justify;
+  }
+  .image{
+    flex: 1;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+  
+  .image img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*about us*/
+  .container{
+    max-width: 95%;
+    margin: 30px auto;
+    padding: auto 20px;
+  }
+  .h{
+    font-style: bold;
+  }
+
+
+    
+  
+  .heading{
+    font-size: 2.5ch;
+    font-weight: bold;
+    background-color: none;
+    color: #24a0ed;
+    padding: 2px;
+    border-bottom: 3px solid #24a0ed;
+  }
+  .content-p{
+    padding-top: 15px;
+    font-size: 2ch;
+    color: grey;
+    text-align: justify;
+  }
+  
+  /*Services*/
+  
+  .card-container{
+    margin: 30px 5px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .card {
+    /*float: left;*/
+    max-width: 33.333%;
+    padding: .75rem;
+    margin-bottom: 2rem;
+    flex-basis: 50%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 2rem;
+    background-color: #e8f4fc;
+  }
+  
+  .card-h5{
+    color: #24a0ed;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  .card-text{
+    color: grey;
+    text-align: justify;
+  }
+  
+  
+  /*footer*/
+  footer{
+    background-color: #24a0ed;
+    width: 100%;
+  }
+  .footer{
+    color: #fff;
+    margin: 0 auto;
+    padding: 10px;
+    width: 90%;
+  }
+  
+  .footer-text h4{
+    margin: 0 auto;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    word-spacing: .2em;
+  }
+  .footer-text a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+  }
+  .footer-text a:hover{
+    color: rgb(250, 246, 246);
+    border-bottom: 2px solid rgb(250, 246, 246);
+  }
+  .outer-footer{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex: 1fr 1fr;
+    flex-wrap: wrap;
+    margin: 15px 0;
+  }
+  .outer-footer ul{
+    list-style: none;
+    display: flex;
+    margin: 0;
+  }
+  .outer-footer li{
+    font-size: 17px;
+    padding: 0 10px;
+    color: #fff;
+  }
+  .outer-footer li:first-child{
+    word-spacing: .26em;
+    font-weight: 600;
+    padding-right: 15px;
+  }
+  .social-media a,.social-media i{
+    text-decoration: none;
+    color: #fff;
+  }
+  .social-media a,.social-media i:hover{
+    color:#fff;
+    transform: scale(1.3);
+  }
+  .contact a{
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .contact i{
+    padding-right: 8px;
+  }
+  
+  .contact i:hover{
+    color:#fff;
+  }
+  
+  .contact a:hover{
+    border-bottom: 2px solid;
+    color: #fff;
+  }
+  
+  /*home page body*/
+  .container-content{
+    
+    margin: 50px;
+    font-size:larger;
+  }
+  .content-p{
+    font-size: smaller;
+  }
+  
+  .msg{
+    text-align: center;
+    margin: 50px;
+    font-size: large;
+  }
+  .container.border{
+    height: auto;
+  }
+  #camera{
+    visibility: hidden;
+  }
+  
