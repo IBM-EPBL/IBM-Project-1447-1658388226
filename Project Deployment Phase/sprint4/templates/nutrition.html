@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--css-->
+  <link rel="stylesheet" href="/static/css/Nutrition.css">
+  <script src="https://kit.fontawesome.com/4a14f9e389.js" crossorigin="anonymous"></script>
+  <title>Find Nutrition</title>
+</head>
+<body>
+  <!--#e3f2fd-->
+  <nav class="navbar" style="background-color:#423e3d;">
+    <a class="navbar-brand" href="{{url_for('index')}}">Nutrion: Nutrition Assistant</a>
+    <div class="nav-right">
+      <a href="{{url_for('index')}}" class="button">Home</a>
+      <a href="#aboutus" class="button">Receipes</a>
+      <a href="{{url_for('profile')}}" class="button">View Profile</a>
+      <a href="{{url_for('logout')}}" id="register" class="btn btn-outline-danger">Log out</a>
+    </div>
+  </nav>
+  <div class="container-content">
+    {% block content%}
+    <center>
+        <div class="container">
+            <div class="border" style="width: 50%; border-radius: 10px; background-color:azure;" >
+            <div class="title"style="font-size:xx-large" ><h>Find Nutrition </h></div><br><br>
+            <form method="POST" enctype="multipart/form-data" action="{{url_for('uploadFile')}}">
+                <input type="file" id="myFile" name="uploaded-file" ><br><br>
+
+                <div class="paragraph" style="font-size:small"><p>(NOTE:Upload file in .jpg,.png )</p><br><br></div>
+                <input type="submit" class="btn btn-primary"  value="Submit" name="submit" style="border: none; width: 100%;">
+            </form>
+
+         </div>   
+    </center>
+    {%endblock%}
+
+  </div>
+
+    <br><br>
+
+  
+  <script>
+    var button = document.getElementById("capture");
+    var img = document.getElementById("camera");
+    if(button=="Capture"){
+      img.style.visibility = "visible";
+    }
+
+  </script>
+  </body>
+</html>

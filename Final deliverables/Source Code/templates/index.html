@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!--css-->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://kit.fontawesome.com/4a14f9e389.js" crossorigin="anonymous"></script>
+  <title>Nutrition Assistant</title>
+</head>
+<body>
+  <div class="{{cls}}" style="color: {{clr}}">{{msg}}</div>
+  <!--#e3f2fd-->
+  <nav class="navbar" style="background-color: #423e3d;">
+    <a class="navbar-brand" href="{{url_for('index')}}">Nutrition Assistant</a>
+    <div class="nav-right">
+      <a href="{{url_for('index')}}" class="button">Home</a>
+      <a href="#aboutus" class="button">About Us</a>
+      <a href="{{url_for('login')}}" class="button">Log in</a>
+      <a href="{{url_for('register')}}" id="register" class="btn btn-primary">Register</a>
+    </div>
+  </nav>
+
+  <div class="banner">
+    <section class="food-search ">
+      <div class="title">
+        <h3 class="content"> Get Your Nutritions Check <br>With Nutrion</h3>
+      </div>
+      <div class="image">
+        <img src="/static/src/desktop img.png" alt="" id="image">
+      </div>
+    </section>
+  </div>
+
+  <section class="container about" id="aboutus">
+    <h1 class="heading">About Us</h1>
+    <p class="content-p">
+      Nutritional support is the provision of adequate nutrients to maintain a 
+      healthy body weight and avoid malnutrition. The continuous delivery of 
+      high-quality and cost-effective nutritional care to patients has been 
+      shown to be an increasingly difficult task. It is observed that dieticians 
+      are requested to carry out the nutritional assessment, to manually 
+      calculate the nutritional needs and to design the everyday meal plan for 
+      each patient. In most cases, these time-consuming tasks are not completed 
+      due to lack of time or inadequate number of personnel. Development of a 
+      computer assisted information tool with cloud-based on-line diet 
+      consultation module and comparison of its efficacy with one- to-one 
+      counselling would be efficiently utilized for client education intervention 
+      programs. The nutrient content calculation was planned to undertake with 
+      commonly consumed traditional as well as junk foods
+    </p>
+</section>
+
+<section class="container services">
+  <h1 class="heading">Our Services</h1>
+  <div class="card-container">
+    <div class="card" style="width: 19rem;">
+      <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-h5">Food Analyzer</h5>
+        <p class="card-text">SMARTBRIDGE is an edTech organization with a vision to bridge the gap between academia & industry. Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world. .
+        </p>
+      </div>
+    </div>
+    <div class="card" style="width: 19rem;">
+
+      <!-- <img src="assets/img/home kids.jpg" class="card-img-top" alt="..."> -->
+      <div class="card-body">
+        <h5 class="card-h5">Recipies</h5>
+        <p class="card-text">SMARTBRIDGE is an edTech organization with a vision to bridge the gap between academia & industry. Our outcome-based experiential learning programs on emerging technologies (Internet of Things, Machine Learning, Data Science, Artificial Intelligence, Robotics) are building skilled entry - level engineers, for the corporate world. .
+        </p>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
+
+</body>
+</html>
